@@ -254,7 +254,7 @@
                     </tr>\
                     <tr>\
                         <th scope="row">photo_path</th>\
-                        <td>' + (feature.properties['photo_path'] !== null ? '<img src="images/' + String(feature.properties['photo_path']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
+                        <td>' + (feature.properties['photo_path'] !== null ? '<img src="images/' + String(feature.properties['file_name']).trim() + '.jpg'.trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['keycode'] !== null ? autolinker.link(String(feature.properties['keycode']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
